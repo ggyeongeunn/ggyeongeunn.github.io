@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js" defer></script>
+    <script type="text/javascript" src="./js/js.js" defer></script>
+    <title>김경은 포트폴리오</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="javascript:;" onclick="scrollSection('main')">GyeongEun</a>
+          </div>
+          <ul>
+            <li>
+              <a href="javascript:;" onclick="scrollSection('about')"
+                >about me</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;" onclick="scrollSection('work')">work</a>
+            </li>
+            <!-- <li>
+              <a href="javascript:;" onclick="scrollSection('project')"
+                >project</a
+              >
+            </li> -->
+            <li>
+              <a href="javascript:;" onclick="scrollSection('contact')"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- main -->
+      <section class="main" id="main">
+        <h1 data-aos="fade-up">web publisher<br />portfolio</h1>
+        <div class="background">
+          <div class="obj"></div>
+          <div class="obj"></div>
+          <div class="obj"></div>
+          <div class="obj"></div>
+          <div class="obj"></div>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="content">
+          <div
+            class="descript-wrap"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+          >
+            <div class="descript">
+              <h3>Intro</h3>
+              <p>
+                안녕하세요 !<br />
+                꾸준히 성장중인 3년차 웹 퍼블리셔 김경은입니다.
+              </p>
+              <p>
+                저는 자사 서비스부터 SI 프로젝트, 웹사이트 제작 및 리뉴얼,
+                반응형 웹 구현, 간단한 프론트엔드 작업까지 다양한 실무 경험을
+                통해 탄탄한 퍼블리싱 역량을 쌓아왔습니다.
+              </p>
+              <p>
+                고객과 동료의 목소리에 귀 기울이며 항상 열린 태도와 책임감 있는
+                자세로 업무에 임하고 있으며,<br />빠르게 변화하는 웹 트렌드
+                속에서도 배움을 멈추지 않고, 새로운 기술에 대해 호기심을 가지고
+                접근하며 지속적으로 성장하고 있습니다.
+              </p>
+              <p>
+                얕고 넓은 경험보다, 깊이 있고 밀도 있는 경험을 쌓아가는
+                퍼블리셔가 되겠습니다.
+              </p>
+              <p>잘부탁드립니다 !</p>
+            </div>
+            <div class="descript">
+              <h3>Work Experience</h3>
+              <p>2022.01 ~ 2024.11 와이코퍼레이션</p>
+            </div>
+            <div class="descript">
+              <h3>Education</h3>
+              <p>2016.03 ~ 2021.02 영남대학교 파이버시스템공학과 졸업</p>
+              <p>2021.06 ~ 2021.09 그린컴퓨터학원 웹디자인기능사 과정 수료</p>
+            </div>
+            <div class="descript">
+              <h3>Skills</h3>
+              <div class="skills-wrap" data-aos="fade-up">
+                <img src="./images/ico_vscode.svg" alt="vscode_icon" />
+                <img src="./images/ico_html.svg" alt="html_icon" />
+                <img src="./images/ico_css.svg" alt="css_icon" />
+                <img src="./images/ico_sass.svg" alt="sass_icon" />
+                <img src="./images/ico_jquery.svg" alt="jquery_icon" />
+                <img src="./images/ico_js.svg" alt="js_icon" />
+                <img src="./images/ico_react.svg" alt="react_icon" />
+                <img src="./images/ico_vue.svg" alt="vue_icon" />
+                <img src="./images/ico_illust.svg" alt="illust_icon" />
+                <img src="./images/ico_photoshop.svg" alt="photoshop_icon" />
+                <img src="./images/ico_figma.svg" alt="figma_icon" />
+                <img src="./images/ico_git.svg" alt="git_icon" />
+                <img src="./images/ico_github.svg" alt="github_icon" />
+                <img src="./images/ico_gitlab.svg" alt="gitlab_icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- work -->
+      <section class="work" id="work">
+        <h2>Work</h2>
+        <div class="content">
+          <a href="./detail_kwater.html" target="_blank" class="card">
+            <img src="./images/thumb_kwater.png" alt="수자원 작업 썸네일" />
+            <div class="work-info">
+              <p>Web</p>
+              <div class="work-title">스마트 정수장 AI 플랫폼</div>
+              <div class="lan">
+                <p>vue</p>
+                <p>scss</p>
+              </div>
+            </div>
+          </a>
+          <a href="./detail_krh.html" target="_blank" class="card">
+            <img src="./images/thumb_krh.png" alt="경북재활 작업 썸네일" />
+            <div class="work-info">
+              <p>반응형 Web</p>
+              <div class="work-title">경상북도 지역장애인보건의료센터</div>
+              <div class="lan">
+                <p>html</p>
+                <p>css</p>
+                <p>jquery</p>
+              </div>
+            </div>
+          </a>
+          <a href="./detail_itabus.html" target="_blank" class="card">
+            <img src="./images/thumb_itabus.png" alt="아이타버스 작업 썸네일" />
+            <div class="work-info">
+              <p>Mobile</p>
+              <div class="work-title">아이타버스</div>
+              <div class="lan">
+                <p>html</p>
+                <p>css</p>
+                <p>jquery</p>
+              </div>
+            </div>
+          </a>
+          <a href="./detail_mfdp.html" target="_blank" class="card">
+            <img src="./images/thumb_mfdp.png" alt="식약처 작업 썸네일" />
+            <div class="work-info">
+              <p>Web</p>
+              <div class="work-title">식의약 데이터 포털</div>
+              <div class="lan">
+                <p>html</p>
+                <p>css</p>
+                <p>jquery</p>
+              </div>
+            </div>
+          </a>
+          <a href="./detail_pacet.html" target="_blank" class="card">
+            <img src="./images/thumb_pacet.png" alt="파셋 작업 썸네일" />
+            <div class="work-info">
+              <p>반응형 Web</p>
+              <div class="work-title">파셋(Pacet)</div>
+              <div class="lan">
+                <p>html</p>
+                <p>css</p>
+                <p>jquery</p>
+              </div>
+            </div>
+          </a>
+          <a href="./detail_iot.html" target="_blank" class="card">
+            <img src="./images/thumb_iot.png" alt="iot 작업 썸네일" />
+            <div class="work-info">
+              <p>Web</p>
+              <div class="work-title">IoT 서비스</div>
+              <div class="lan">
+                <p>html</p>
+                <p>css</p>
+                <p>javascript</p>
+                <p>jquery</p>
+              </div>
+            </div>
+          </a>
+          <a href="./detail_deepin.html" target="_blank" class="card">
+            <img src="./images/thumb_deepin.png" alt="디핀 작업 썸네일" />
+            <div class="work-info">
+              <p>Mobile</p>
+              <div class="work-title">디핀(Deepin)</div>
+              <div class="lan">
+                <p>html</p>
+                <p>css</p>
+                <p>javascript</p>
+                <p>jquery</p>
+              </div>
+            </div>
+          </a>
+          <a href="./detail_deeply.html" target="_blank" class="card">
+            <img src="./images/thumb_deeply.png" alt="디플리 작업 썸네일" />
+            <div class="work-info">
+              <p>Web</p>
+              <div class="work-title">디플리(Deeply)</div>
+              <div class="lan">
+                <p>react</p>
+                <p>scss</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- project -->
+      <!-- <section class="project" id="project">
+        <h2>Project</h2>
+        <div class="content"></div>
+      </section> -->
+      <!-- contact -->
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="wrap" data-aos="zoom-in">
+          <p>잘 부탁드립니다 !</p>
+          <a href="mailto:ggyeongeunn@gmail.com">ggyeongeunn@gmail.com</a>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer>
+        <div class="wrap">
+          <p>© 2024 KimGyeongEun All Rights Reserved</p>
+        </div>
+      </footer>
+      <aside>
+        <a href="javascript:;" onclick="scrollSection('main')"
+          ><img src="./images/aside.svg" alt="최상단 이동 버튼"
+        /></a>
+      </aside>
+    </div>
+  </body>
+</html>

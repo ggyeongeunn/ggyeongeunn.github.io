@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css");
+
+/* common */
+:root {
+  --main-color: #2378ff;
+  --sub-color: #55a0ff;
+  --text-color: #464c53;
+  --text-sub-color: #a0a0a0;
+  --gray-color: #f0f0f0;
+  --shadow-color: #eee;
+  --background-color: #f5faff;
+  --title-size: 24px;
+  --text-size: 16px;
+}
+
+/* style reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%; */
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--text-size);
+  font-weight: 400;
+  color: var(--text-color);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  word-break: keep-all;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+  width: 100%;
+  min-width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+::selection {
+  background: #55a0ffb3;
+  color: #fefefe !important;
+}
+.wrapper {
+  max-width: 2880px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* 배경화면 애니메이션 */
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background .obj {
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move 38s linear infinite;
+}
+
+.background .obj:nth-child(1) {
+  width: 90vmin;
+  height: 90vmin;
+  border-radius: 90vmin;
+  color: #ffebefb3;
+  top: 61%;
+  left: 21%;
+  animation-duration: 22s;
+  animation-delay: -102s;
+  transform-origin: 13vw 24vh;
+  box-shadow: 100vmin 0 12.962vmin currentColor;
+}
+.background .obj:nth-child(2) {
+  width: 80vmin;
+  height: 80vmin;
+  border-radius: 100vmin;
+  color: #dfedffb3;
+  top: 90%;
+  left: 78%;
+  animation-duration: 56s;
+  animation-delay: -31s;
+  transform-origin: 18vw -8vh;
+  box-shadow: 100vmin 0 12.52vmin currentColor;
+}
+.background .obj:nth-child(3) {
+  width: 60vmin;
+  height: 60vmin;
+  border-radius: 60vmin;
+  color: #efffe8b3;
+  top: 30%;
+  left: 80%;
+  animation-duration: 114s;
+  animation-delay: -75s;
+  transform-origin: -19vw 4vh;
+  box-shadow: -100vmin 0 13.42vmin currentColor;
+}
+.background .obj:nth-child(4) {
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: 40vmin;
+  color: #ffffdfb3;
+  top: 1%;
+  left: 86%;
+  animation-duration: 70s;
+  animation-delay: -31s;
+  transform-origin: -15vw 11vh;
+  box-shadow: -100vmin 0 12.92vmin currentColor;
+}
+.background .obj:nth-child(5) {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  color: #ffd5ffb3;
+  top: 79%;
+  left: 15%;
+  animation-duration: 30s;
+  animation-delay: -35s;
+  transform-origin: -11vw 9vh;
+  box-shadow: 100vmin 0 12.98vmin currentColor;
+}
